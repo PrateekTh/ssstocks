@@ -10,11 +10,11 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import C_TableRow from './C_TableRow';
-import companyDetails from '@/types/companyDetails';
+import companyBasicDetails from '@/types/companyBasicDetails';
 
 async function CompanyList() {
 
-    const companyData: companyDetails[] = await getAllCompanies();
+    const companyData: companyBasicDetails[] = await getAllCompanies();
 
     return (
         <div className='py-5 md:p-10 mx-auto'>

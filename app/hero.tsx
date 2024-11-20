@@ -22,7 +22,7 @@ function HeroSection() {
             </div>
             <br/>
             <div>
-                <Link className={buttonVariants({ variant: "secondary" })} href={"#searchSection"}>
+                <Link className={buttonVariants({ variant: "secondary" })} href={"#explore"}>
                     <span className="font-bold text-lg">Try Now</span> <ArrowBigDownDash />
                 </Link>
             </div>				

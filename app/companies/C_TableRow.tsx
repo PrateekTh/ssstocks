@@ -5,12 +5,12 @@ import {
     TableCell,
     TableRow,
 } from "@/components/ui/table"
-import companyDetails from '@/types/companyDetails'
+import companyBasicDetails from '@/types/companyBasicDetails'
 import { useRouter } from 'next/navigation'
 
 function C_TableRow(
     {company, key} : {
-        company: companyDetails, 
+        company: companyBasicDetails, 
         key:string
     }
 ) {

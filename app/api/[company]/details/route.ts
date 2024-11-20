@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const url = "https://www.alphavantage.co/query?"
-const func = "DAILY"
+const func = "OVERVIEW"
 const apiKey = "demo"
 
 export async function GET( req : NextRequest, { params }: { params: { company: string }}) {
@@ -10,7 +10,7 @@ export async function GET( req : NextRequest, { params }: { params: { company: s
     const res = await fetch(`${url}function=${func}&symbol=${symbol}&apikey=${apiKey}`);
     const data = await res.json();
 
-    console.log(symbol)
+    // console.log(symbol)
 
     return NextResponse.json(data)
 }
