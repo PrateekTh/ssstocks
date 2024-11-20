@@ -1,5 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import StockCard from "./stockCard"
+import Spotlight from "./spotlight"
 
 function ComparePage() {
     
@@ -16,8 +17,10 @@ function ComparePage() {
             <TabsContent value="table">
                 <StockCard/>
             </TabsContent>
-            
-            <TabsContent value="graph">Graphs</TabsContent>
+
+            <TabsContent value="graph">
+                <Spotlight/>
+            </TabsContent>
             <TabsContent value="series">Series</TabsContent>
         </Tabs>
     </div>
