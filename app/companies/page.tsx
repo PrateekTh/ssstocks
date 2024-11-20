@@ -17,12 +17,12 @@ async function CompanyList() {
     const companyData: companyDetails[] = await getAllCompanies();
 
     return (
-        <div className='p-5 md:p-10 mx-auto'>
-            <div className='text-3xl'>
+        <div className='py-5 md:p-10 mx-auto'>
+            <div className='p-2 lg:p-0 text-2xl font-bold lg:text-3xl'>
                 Top Companies by Market Cap       
             </div>
             <Table className='md:w-4/5'>
-                <TableCaption>A list of your recent invoices.</TableCaption>
+                <TableCaption>Top 50 companies by Market Cap</TableCaption>
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-[100px]">Symbol</TableHead>

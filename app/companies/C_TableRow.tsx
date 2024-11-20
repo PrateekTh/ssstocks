@@ -22,8 +22,8 @@ function C_TableRow(
     return (
         <TableRow key={key} className='cursor-pointer duration-300 hover:text-teal-400' onClick={() => handleRowClick(company.symbol)}>
             <TableCell className="font-bold">{company.symbol}</TableCell>
-            <TableCell> {company.name}</TableCell>
-            <TableCell> {company.industry}</TableCell>
+            <TableCell className='text-xs md:text-sm'> {company.name}</TableCell>
+            <TableCell className='text-xs md:text-sm'> {company.industry}</TableCell>
             <TableCell className="text-right">{company.marketCap}</TableCell>
         </TableRow>
     )
