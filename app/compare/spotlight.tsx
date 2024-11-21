@@ -14,21 +14,9 @@ import ChartController from './chartController'
 import { useStore } from '@/lib/store'
 import { chartProps, chartColors } from './render';
 import chartPropsTypes from "@/types/chartProps"
+import customChartConfig from '@/types/customChartConfig'
+import chartData from '@/types/chartData'
 import companyDetails from '@/types/companyDetails'
-
-interface chartData {
-    prop: string;
-    [key: string]: string | number;
-}
-
-
-
-interface customChartConfig {
-    [key: string]: {
-        label: string,
-        color: string
-    }
-}
 
 const testChartConfig = {
   desktop: {
@@ -98,8 +86,6 @@ function Spotlight() {
                     {companyDetails.map((val, key)=> { 
                         return <Bar key={key + "_bar_" + val.Symbol} dataKey={key+"_"+val.Symbol} fill={chartColors[key]} radius={4} />})}
                 </BarChart>
-
-
             </ChartContainer>
 
 

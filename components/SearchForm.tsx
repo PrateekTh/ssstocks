@@ -20,7 +20,7 @@ function SearchForm() {
     }
 
     function onRemoveCompany(){
-        if(counter > 0) {
+        if(counter > 1) {
             const key = (counter-1).toString()
             const { [key]: foo, ...rest } = inputValues;
             setCounter(counter - 1);

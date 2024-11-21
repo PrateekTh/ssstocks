@@ -15,17 +15,17 @@ import { renderDetails } from "./render";
 import companyDetails from "@/types/companyDetails";
 import { useEffect, useState } from "react"
 
-
 function StockCard() {
 
     const [details, setDetails] = useState<companyDetails[]>([]);
-    const {companyDetails} = useStore();
+    const { companyRef, companyDetails} = useStore();
 
     useEffect(() => {
-        if(companyDetails) setDetails(companyDetails)
+        if(companyDetails.length) setDetails(companyDetails)
     }, [companyDetails]);
 
     return (
+        
         <Table>
             <TableCaption></TableCaption>
             <TableHeader>
