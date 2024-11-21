@@ -19,11 +19,12 @@ function ChartController({updateChart} : {
     // const [type, setType] = useState<string>("");
 
     useEffect(() => {
-        console.log(prop);
+        // console.log(prop);
         if(prop){
             updateChart(prop, "")
         }
     }, [prop]);
+
 
     return (<>
         <div className='flex flex-col gap-4 p-5 shadow-slate-700 md:shadow-[0_0_2px_#aaa,inset_0_0_2px_#aaa,0_0_5px_#52525B,0_0_15px_#52525B,0_0_5px_#52525B] rounded-md hover:shadow-[0_0_2px_#134E4A,inset_0_0_2px_#134E4A,0_0_5px_#52525B,0_0_15px_#52525B,0_0_1px_#52525B]  duration-700'>

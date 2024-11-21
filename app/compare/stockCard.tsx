@@ -37,7 +37,7 @@ function StockCard() {
             </TableHeader>
             <TableBody>
                 {renderDetails.map((keyName :string, keyIndex) =>
-                    <TableRow key={"tRow" + keyIndex + keyName}>
+                    <TableRow className="hover:bg-muted" key={"tRow" + keyIndex + keyName}>
                         <TableCell key={"prop" + keyIndex + keyName} className="font-medium">{keyName}</TableCell>
                         {details.map((val : companyDetails, key)=> 
                             <TableCell key={val.Symbol + key + keyName}> {val[`${keyName}`]} </TableCell> )}

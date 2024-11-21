@@ -70,3 +70,19 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.logo-main{
+
+  filter: drop-shadow( 3px 3px 20px rgba(89, 214, 221, 0.7));
+  -webkit-animation: rotating 10s linear infinite;
+
+}

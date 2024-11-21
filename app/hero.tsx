@@ -7,7 +7,7 @@ import Image from "next/image";
 function HeroSection() {
   return (
     <div className="flex flex-col mt-5 lg:flex-row gap-5 mx-auto lg:w-5/6 items-center">
-        <div><Image src="/vercel.svg" alt="logo" width={200} height={200} /> </div>
+        <div><Image className='logo-main w-[200px] md:w-[300px]' src="/logo.svg" alt="logo" width={300} height={300} /> </div>
         <div className="w-1/6"> </div>
         <div> 
             <div className="lg:text-5xl text-3xl font-bold">Compare Realtime Stocks like never before.</div>
@@ -18,7 +18,7 @@ function HeroSection() {
             <br/>
             <div className='flex gap-2 flex-col lg:flex-row hover:text-teal-400'>
                 <div className="text-lg font-bold">You make the choice,</div>
-                <div className="text-lg font-bold">We back it up</div>
+                <div className="text-lg font-bold">we'll back it up</div>
             </div>
             <br/>
             <div>

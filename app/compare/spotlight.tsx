@@ -31,11 +31,6 @@ const testChartConfig = {
 
 const testChartData = [
     { prop: "January", desktop: 186, mobile: 80 },
-    { prop: "February", desktop: 305, mobile: 200 },
-    { prop: "March", desktop: 237, mobile: 120 },
-    { prop: "April", desktop: 73, mobile: 190 },
-    { prop: "May", desktop: 209, mobile: 130 },
-    { prop: "June", desktop: 214, mobile: 140 },
 ]
 
 function Spotlight() {
@@ -57,9 +52,8 @@ function Spotlight() {
             })
             data.push({prop: prop, ...obj})
         })
-
-        console.log(config)
-        console.log(data);
+        // console.log(config)
+        // console.log(data)
         setChartData(data)
         setChartConfig(config)
     }
@@ -87,8 +81,6 @@ function Spotlight() {
                         return <Bar key={key + "_bar_" + val.Symbol} dataKey={key+"_"+val.Symbol} fill={chartColors[key]} radius={4} />})}
                 </BarChart>
             </ChartContainer>
-
-
             <div className='w-1/12'></div>
         </div>
     )
