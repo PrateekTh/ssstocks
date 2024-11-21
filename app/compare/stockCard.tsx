@@ -40,7 +40,7 @@ function StockCard() {
                     <TableRow className="hover:bg-muted" key={"tRow" + keyIndex + keyName}>
                         <TableCell key={"prop" + keyIndex + keyName} className="font-medium">{keyName}</TableCell>
                         {details.map((val : companyDetails, key)=> 
-                            <TableCell key={val.Symbol + key + keyName}> {val[`${keyName}`]} </TableCell> )}
+                            <TableCell key={val.Symbol + key + keyName}> {val[keyName as keyof companyDetails]} </TableCell> )}
                     </TableRow>
                 )}
             </TableBody>

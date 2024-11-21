@@ -1,5 +1,5 @@
 
-async function CompanyPage({params}: {params: {company:string}}) {
+async function CompanyPage({params}: {params: Promise<{company:string}>}) {
 
     const {company} = await params;
 
