@@ -17,8 +17,8 @@ export const useStore = create<State>()(
         companyRef: {},
         companyDetails:[],
         companySeries:[],
-        setCompanies: (company) => set((state) => ({ companyRef: company })),
-        setDetails: (details) => set((state) => ({ companyDetails: details })),
-        setSeries: (series) => set((state) => ({ companySeries: series })),
+        setCompanies: (company) => set(() => ({ companyRef: company })),
+        setDetails: (details) => set(() => ({ companyDetails: details })),
+        setSeries: (series) => set(() => ({ companySeries: series })),
     }),
 )

@@ -23,6 +23,7 @@ function SearchForm() {
         if(counter > 1) {
             const key = (counter-1).toString()
             const { [key]: foo, ...rest } = inputValues;
+            console.log(foo);
             setCounter(counter - 1);
             setInputValues(rest);
         }

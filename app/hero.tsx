@@ -18,7 +18,7 @@ function HeroSection() {
             <br/>
             <div className='flex gap-2 flex-col lg:flex-row hover:text-teal-400'>
                 <div className="text-lg font-bold">You make the choice,</div>
-                <div className="text-lg font-bold">we'll back it up</div>
+                <div className="text-lg font-bold">we&apos;ll back it up</div>
             </div>
             <br/>
             <div>

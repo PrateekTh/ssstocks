@@ -18,7 +18,7 @@ import { useEffect, useState } from "react"
 function StockCard() {
 
     const [details, setDetails] = useState<companyDetails[]>([]);
-    const { companyRef, companyDetails} = useStore();
+    const {companyDetails} = useStore();
 
     useEffect(() => {
         if(companyDetails.length) setDetails(companyDetails)

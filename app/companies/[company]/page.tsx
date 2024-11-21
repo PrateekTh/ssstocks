@@ -15,7 +15,7 @@ async function CompanyPage({params}: {params: {company:string}}) {
                 <span className="font-bold">Description for {company}</span><br/><br/>
                 <p>A company, abbreviated as co., is a legal entity representing an association of legal people, whether natural, juridical or a mixture of both, with a specific objective. Company members share a common purpose and unite to achieve specific, declared goals.<br/></p>
                 <br/>
-                <p>Over time, companies have evolved to have the following features: "separate legal personality, limited liability, transferable shares, investor ownership, and a managerial hierarchy". The company, as an entity, was created by the state which granted the privilege of incorporation.</p>
+                <p>Over time, companies have evolved to have the following features: separate legal personality, limited liability, transferable shares, investor ownership, and a managerial hierarchy. The company, as an entity, was created by the state which granted the privilege of incorporation.</p>
             </div>
         </div>
     )

@@ -16,7 +16,6 @@ import { chartProps, chartColors } from './render';
 import chartPropsTypes from "@/types/chartProps"
 import customChartConfig from '@/types/customChartConfig'
 import chartData from '@/types/chartData'
-import companyDetails from '@/types/companyDetails'
 
 const testChartConfig = {
   desktop: {
@@ -40,11 +39,11 @@ function Spotlight() {
     const [chartConfig, setChartConfig] = useState<customChartConfig>(testChartConfig);
 
     function updateChart( metricSet: keyof chartPropsTypes, chartType:string){
+        console.log(chartType);
         const data : chartData[] = []
         const config : customChartConfig = {}
-
         const props = chartProps[metricSet]
-        props.map((prop, val)=>{
+        props.map((prop)=>{
             const obj :Record<string, string | number> = {};
             companyDetails.map((val, key)=> {
                 obj[key+ "_" + val.Symbol] = Number(val[prop])
