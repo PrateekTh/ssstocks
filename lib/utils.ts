@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export async function getCompanyData(companies : Record<string,string>){
 	const seriesData = []
 	const detailData = []
-	for (let key in companies) {
+	for (const key in companies) {
 		const urlSeries = `/api/${companies[key]}/daily`
 		const urlDetail = `/api/${companies[key]}/details`
 		seriesData.push(await (await fetch(urlSeries)).json())
