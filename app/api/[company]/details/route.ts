@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const url = "https://www.alphavantage.co/query?"
 const func = "OVERVIEW"
-const apiKey = "demo"
+const apiKey = process.env.AV_API_KEY
 
 export async function GET( req : NextRequest, { params }: { params: { company: string }}) {
     const slug = await params
@@ -11,6 +11,8 @@ export async function GET( req : NextRequest, { params }: { params: { company: s
     const data = await res.json();
 
     // console.log(symbol)
+    // console.log(apiKey)
+
 
     return NextResponse.json(data)
 }
