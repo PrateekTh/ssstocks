@@ -61,13 +61,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/3e235cc7-1aa7-4c95-913e-47cc839a6a89" width=210>
+<img src="https://github.com/user-attachments/assets/ba50a7a6-6829-40df-af01-ad828df1d51a">
 
-<img src="https://github.com/user-attachments/assets/8da7e308-83fc-489a-9f9d-064bccf920c1" width=770>
+<img src="https://github.com/user-attachments/assets/8da7e308-83fc-489a-9f9d-064bccf920c1">
 
------------------
-<img src="https://github.com/user-attachments/assets/ba50a7a6-6829-40df-af01-ad828df1d51a" width=982>
+<img src="https://github.com/user-attachments/assets/3e235cc7-1aa7-4c95-913e-47cc839a6a89" height=400>
 
+<img src="https://github.com/user-attachments/assets/23e18d8f-f887-4df0-a059-d852bcd8d44c" height=400>
 
-
-
+<img src="https://github.com/user-attachments/assets/369bafcc-5cbf-4fff-99df-c6b792694e64" height=400>
